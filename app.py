@@ -80,6 +80,20 @@ def createAudioString():
 # API Methods for Test
 #
 
+# Delete result row
+@app.route("/delete-result", methods=["POST"])
+def deleteResult():
+
+    # Get delete parameters
+    validation_id = float(request.form.get("validation-id", -1))
+    row_id = int(request.form.get("row-id"))
+
+    # Delete the row
+    if validation_id == (5 / 4):
+        db.delete_result(row_id)
+
+    return { "result": True }
+
 # Record test results
 @app.route("/record-test-results", methods=["POST"])
 def recordTestResults():

@@ -5,6 +5,23 @@ import sqlite3
 import datetime
 
 #
+# Delete result row
+#
+def delete_result(row_id):
+
+	try:
+		# Connect to db if required
+		db_conn, db_cur = open_db()
+
+		# Delete result row
+		db_cur.execute("delete from results where id = ?", [row_id])
+		db_conn.commit()
+
+	finally:
+		# Close the database
+		db_conn.close()
+
+#
 # Custom row factory
 #
 # - From: https://docs.python.org/3/library/sqlite3.html#sqlite3-howto-row-factory

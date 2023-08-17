@@ -1,6 +1,7 @@
 <html lang="en">
 	<head>
 		<title>Status</title>
+		<script src="{{ url_for('static', filename='scripts/status.js') }}"></script>
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/common.css') }}">
 	</head>
 	<body>
@@ -28,6 +29,9 @@
 								{% for field, value in row.items() %}
 								<td>{{value}}</td>&nbsp;
 								{% endfor %}
+								<td>
+									<a onclick="onDeleteRow('{{row['id']}}')">Delete</a>
+								</td>
 							</tr>
 						{% endfor %}
 						</table>
