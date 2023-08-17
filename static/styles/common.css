@@ -177,7 +177,7 @@ li {
 	width: 24rem;
 }
 .line-item-label.test {
-	padding-left: 2rem;
+	padding-left: 1rem;
 	width: 100%;
 }
 
@@ -213,7 +213,7 @@ p {
 row {
 	align-items: center;
 	display: flex;
-	margin: 1rem 0 1rem 0;
+	margin: 0.6rem 0 0.6rem 0;
 }
 
 /* Table styling */
@@ -252,7 +252,7 @@ tr:nth-child(1) {
 /* Validation row controls */
 .validation-row {
 	background-color: #d8d8d8;
-	padding-left: 1rem;
+	padding: 0.3rem 0.5rem 0.3rem 0.3rem;
 }
 .validation-row button {
 	height: 2.3em;
@@ -266,12 +266,8 @@ tr:nth-child(1) {
 .validation-row #btn-delete {
 	margin-left: 2rem;
 }
-.validation-row input[type="text"] {
-	height: 2.3em;
-	text-align: right;
-}
-.validation-row input[type="text"].test {
-	height: 2.3em;
+.validation-row input.test {
+	height: 2rem;
 	text-align: right;
 	transition: background-color 1s;
 	width: 7rem;

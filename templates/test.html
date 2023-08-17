@@ -61,10 +61,10 @@
 					</section>
 				</section>
 
-			<!-- Bottom row -->
-			<footer class="solo">
-				<button id="button-next" type="button" onclick="startTest(1, 3)">Start the Test</button>
-			</footer>
+				<!-- Bottom row -->
+				<footer class="solo">
+					<button id="button-next" type="button" onclick="startTest(1, 3)">Start the Test</button>
+				</footer>
 			</form>
 		</article>
 
@@ -100,7 +100,7 @@
 							{% for row in test1_data %}
 							<row id="row-{{row['id']}}" class="validation-row">
 								<span class='line-item-label test'>{{row["name"]}}</span>
-								<input class="test" type="text" value="">
+								<input class="test" type="number" value="">
 							</row>
 							{% endfor %}
 						</section>
@@ -167,7 +167,7 @@
 		</article>
 		
 		<!-------------------------------- Automatic Test -------------------------------->
-		<article id="validation-test-5" class="card">
+		<article id="validation-test-5" class="card" hidden="true">
 
 				<!-- Top row -->
 				<section class="container">
@@ -217,7 +217,7 @@
 											<audio id="audio-{{row['id']}}" autobuffer="autobuffer" src="{{row['audio']}}"></audio>
 										</td>
 										<td>
-											<input class="test" type="text" value="{{row['extracted_value']}}" onchange="onValueChanged(this)">
+											<input class="test" type="number" value="{{row['extracted_value']}}" onchange="onValueChanged(this)">
 										</td>
 									</tr>
 									{% endfor %}
