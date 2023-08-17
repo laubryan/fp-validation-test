@@ -61,13 +61,13 @@ create table tests(
 insert into tests (test_id, field_id)
 select 1, id
 from fields
-where id < 20;
+where id < 12;
 
 /* Populate fields for Test 2 */
 insert into tests (test_id, field_id)
 select 2, id
 from fields
-where id >=20;
+where id >=20 and id < 32;
 
 /* Create results table */
 drop table if exists results;
