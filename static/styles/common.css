@@ -35,19 +35,6 @@ button:disabled {
 	border: 1px solid #bbb;
 }
 
-/* Image button class */
-.image-button {
-	height: 2.3em;
-	margin: 0;
-	padding: 0;
-	vertical-align: bottom;
-	width: 4em;
-}
-.image-button img {
-	height: 1.5rem;
-	width: 1.5rem;
-}
-
 /* Category sections */
 .category {
 	border: 1px solid #a0a0a0;
@@ -134,9 +121,31 @@ h2 {
 	width: 10rem;
 }
 
+/* Image button class */
+.image-button {
+	height: 2.3em;
+	margin: 0;
+	padding: 0;
+	vertical-align: bottom;
+	width: 4em;
+}
+.image-button img {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
 /* Fit an image */
 .image-fit {
 	width: 100%;
+}
+
+/* Information card */
+.info-card {
+	border: 1px solid #d0d0d0;
+	border-radius: 0.5rem;
+	box-shadow: 1px 1px 2px #aaa5;
+	display: inline-block;
+	padding: 1rem;
 }
 
 /* Icons inline with text */
@@ -146,6 +155,15 @@ h2 {
 	border-radius: 0.2rem;
 	width: 1.5rem;
 	vertical-align: bottom;
+}
+
+/* Inline icon without border */
+.inline-icon.noborder {
+	background-color: transparent;
+	border: none;
+	padding: 0 0.25rem 0 0.25rem;
+	width: 2rem;
+	vertical-align: middle;
 }
 
 /* Labels */
