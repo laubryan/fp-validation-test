@@ -1,6 +1,6 @@
 # Validation Test for Automated vs Manual Document Extraction
 
-Test to benchmark user performance in manual data entry vs automated document extraction.
+Test to benchmark user performance in manual data entry vs automated document extraction scenarios.
 
 The test simulates two tests:
 
